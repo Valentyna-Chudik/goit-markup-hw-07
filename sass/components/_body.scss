@@ -5,3 +5,18 @@ body {
   font-family: $mainFont;
   letter-spacing: 0.03em;
 }
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

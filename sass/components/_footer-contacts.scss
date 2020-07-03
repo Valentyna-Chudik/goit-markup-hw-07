@@ -1,5 +1,8 @@
 .footer-contacts {
   padding-right: 69px;
+}
+
+.visually-hidden {
   @extend %visually-hidden;
 }
 
@@ -28,9 +31,9 @@
   transition: color $transition;
 
   &:hover {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
