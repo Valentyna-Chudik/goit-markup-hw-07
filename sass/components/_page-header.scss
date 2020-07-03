@@ -1,0 +1,16 @@
+.page-header {
+  color: $title-text-color;
+}
+
+.container {
+  @extend %container;
+}
+
+.page-header > .container {
+  display: flex;
+}
+
+.flex-nav {
+  display: flex;
+  align-items: center;
+}

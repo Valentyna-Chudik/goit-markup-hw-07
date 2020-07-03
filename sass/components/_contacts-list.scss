@@ -1,0 +1,50 @@
+.contacts-list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+
+  .contacts-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.contacts-link {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primary-text-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.envelope-icon {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+
+  fill: currentColor;
+  transition: fill transition;
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+
+  fill: currentColor;
+  transition: fill transition;
+}
