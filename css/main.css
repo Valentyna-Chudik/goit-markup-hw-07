@@ -598,11 +598,11 @@ html {
 
 .modal-input:focus ~ .icon-modal,
 .modal-input:not(:placeholder-shown) ~ .icon-modal {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-input:focus, .modal-input:not(:placeholder-shown) {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
   outline: none;
 }
 
@@ -1020,12 +1020,6 @@ html {
   margin-right: 30px;
 }
 
-.clients-item:hover, .clients-item:focus {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
-  border-radius: 4px;
-}
-
 .clients-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,6 +1065,12 @@ html {
 .clients-icon6 {
   width: 88.48px;
   height: 45.44px;
+}
+
+.clients-item:hover, .clients-link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .footer {

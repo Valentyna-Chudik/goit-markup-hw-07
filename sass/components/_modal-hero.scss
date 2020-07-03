@@ -93,12 +93,12 @@
 
   &:focus ~ .icon-modal,
   &:not(:placeholder-shown) ~ .icon-modal {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 
   &:focus,
   &:not(:placeholder-shown) {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     outline: none;
   }
 }
