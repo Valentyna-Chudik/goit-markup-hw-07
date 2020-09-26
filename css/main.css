@@ -18,6 +18,63 @@
   outline: 2px solid black;
 }
 
+.header-logo, .footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -275,38 +332,21 @@ summary {
   display: list-item;
 }
 
-body {
-  background-color: #ffffff;
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-}
-
-* {
-  list-style: none;
-  text-decoration: none;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
 .page-header {
+  position: relative;
   color: #212121;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-header > .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flex-nav {
@@ -324,11 +364,12 @@ html {
   padding-top: 24px;
   padding-bottom: 25px;
   color: #212121;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700px;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 26px;
+  }
 }
 
 .logo-web {
@@ -336,14 +377,38 @@ html {
 }
 
 .footer-logo {
-  display: inline-block;
-  padding-left: 0px;
-  margin-bottom: 10px;
+  display: block;
+  margin-bottom: 20px;
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 1.18;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+  }
+}
+
+.menu-button {
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .site-nav {
@@ -1085,8 +1150,8 @@ html {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding-bottom: 28px;
-  padding-top: 48px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 

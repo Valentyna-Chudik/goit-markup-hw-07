@@ -6,11 +6,11 @@
 
   color: $title-text-color;
 
-  font-family: $logoFont;
-  font-weight: 700px;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @extend %logo;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 
 .logo-web {
@@ -18,14 +18,14 @@
 }
 
 .footer-logo {
-  display: inline-block;
-  padding-left: 0px;
-
-  margin-bottom: 10px;
+  display: block;
+  // padding-left: 0px;
+  margin-bottom: 20px;
   color: $primary-white-color;
 
-  font-family: $logoFont;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 1.18;
+  @extend %logo;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
